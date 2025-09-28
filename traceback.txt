@@ -1,20 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-PermissionError: [Errno 13] Permission denied: 'C:\\Users\\clim7253.HWDSB\\OneDrive - Hamilton Wentworth District School Board\\Game3.0\\game\\saves\\navigation.json.new'
+While running game code:
+  File "game/script.rpy", line 167, in script
+    jump choice6_done
+ScriptError: could not find label 'choice6_done'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\clim7253.HWDSB\AppData\Local\Microsoft\WinGet\Packages\RenPy.RenPySDK_Microsoft.Winget.Source_8wekyb3d8bbwe\renpy-8.3.7-sdk\renpy\bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "C:\Users\clim7253.HWDSB\AppData\Local\Microsoft\WinGet\Packages\RenPy.RenPySDK_Microsoft.Winget.Source_8wekyb3d8bbwe\renpy-8.3.7-sdk\renpy\main.py", line 599, in main
-    renpy.dump.dump(False)
-  File "C:\Users\clim7253.HWDSB\AppData\Local\Microsoft\WinGet\Packages\RenPy.RenPySDK_Microsoft.Winget.Source_8wekyb3d8bbwe\renpy-8.3.7-sdk\renpy\dump.py", line 256, in dump
-    with open(new, "w") as f:
-PermissionError: [Errno 13] Permission denied: 'C:\\Users\\clim7253.HWDSB\\OneDrive - Hamilton Wentworth District School Board\\Game3.0\\game\\saves\\navigation.json.new'
+  File "game/script.rpy", line 167, in script
+    jump choice6_done
+  File "C:\Users\clim7253.HWDSB\AppData\Local\Microsoft\WinGet\Packages\RenPy.RenPySDK_Microsoft.Winget.Source_8wekyb3d8bbwe\renpy-8.3.7-sdk\renpy\ast.py", line 1712, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Users\clim7253.HWDSB\AppData\Local\Microsoft\WinGet\Packages\RenPy.RenPySDK_Microsoft.Winget.Source_8wekyb3d8bbwe\renpy-8.3.7-sdk\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'choice6_done'.
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.7.25031702
 Storyboard 1.0
-Sat Sep 27 18:03:21 2025
+Sun Sep 28 05:46:06 2025
