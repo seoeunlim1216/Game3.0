@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
+define e = Character("Ava")
 
 
 # The game starts here.
@@ -14,7 +14,7 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+    scene bg GroundR
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
@@ -24,10 +24,12 @@ label start:
 
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
+    e "Hello Engineer! You are a 30 year old man child in 30 thousand dollars worth of student loans (You never completed the program, you were kicked out for academic dishonesty). You are living at home with your parents."
+    e "Time to move out! Now, go build a home! You get a 100 thousand dollar loan from your parents! Good luck!!!"
+    e "Goal: Balance cost and sacrifice what you can to prevent lifelong debt on your parent's shoulders."
+    e ""
     # This ends the game.
+
+
 
     return
